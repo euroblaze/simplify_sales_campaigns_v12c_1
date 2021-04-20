@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem name="Sales Campaigns" id="sales_campaigns.campaigns_menu"
+                  action="campaign_utm_action" parent="sale.menu_sale_config"/>
+
+    </data>
+</odoo>
