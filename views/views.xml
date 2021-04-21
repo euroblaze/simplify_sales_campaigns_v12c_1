@@ -3,7 +3,7 @@
     <data>
 
         <menuitem name="Sales Campaigns" id="simplify_sales_campaigns_v12c_1.campaigns_menu"
-                  action="campaign_utm_action" parent="sale.menu_sale_config"/>
+                  action="sales_campaigns_action" parent="sale.menu_sale_config"/>
 
     </data>
 </odoo>

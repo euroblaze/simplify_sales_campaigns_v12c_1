@@ -7,17 +7,15 @@
     'category': 'Productivity',
     'version': '0.1',
 
-    # any module necessary for this one to work correctly
-    'depends': ['base', 'sale_management', 'sale', 'crm', 'mass_mailing'],
+    'depends': ['base', 'sale', 'sale_management', 'crm'],
 
-    # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/crm_campaign_view.xml',
         'views/sales_campaign_view.xml',
         'views/views.xml',
     ],
-    # only loaded in demonstration mode
+
     'demo': [
         'demo/demo.xml',
     ],

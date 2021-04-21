@@ -2,9 +2,9 @@
 <odoo>
     <data>
 
-        <record id="utm.utm_campaign_form" model="ir.ui.view">
-            <field name="name">utm.campaign.form</field>
-            <field name="model">utm.campaign</field>
+        <record id="sales_campaigns_campaign_form" model="ir.ui.view">
+            <field name="name">sales_campaigns.campaign.form</field>
+            <field name="model">sales_campaigns.campaign</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet>
@@ -22,14 +22,24 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="campaign_utm_action">
+        <record id="sales_campaigns_campaign_tree" model="ir.ui.view">
+            <field name="name">sales_campaigns.campaign.tree</field>
+            <field name="model">sales_campaigns.campaign</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="sales_campaigns_action">
             <field name="name">Sales Campaigns</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">utm.campaign</field>
+            <field name="res_model">sales_campaigns.campaign</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
-                    Create your first campaign.
+                    Create your first sales campaign.
                 </p>
             </field>
         </record>

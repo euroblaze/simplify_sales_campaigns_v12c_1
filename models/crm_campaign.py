@@ -6,8 +6,8 @@ from odoo import models, fields, api
 class CrmCampaign(models.Model):
     _inherit = 'crm.lead'
 
-    campaign_id = fields.Many2one(
-        'utm.campaign',
-        string='Campaign',
-        help='Sales Campaign',
+    sales_campaign_id = fields.Many2one(
+        'sales_campaigns.campaign',
+        string='Sales Campaign',
+        help='Sales campaign name.',
         required=False)
