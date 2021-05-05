@@ -29,7 +29,7 @@ be reached at odoo@simplify-erp.com with your comments and suggestions for this 
 
 # Users
 
-Currently this module is being used in the odoo Sale module by [Simplify-ERP®](#simplify-erp.com).
+Currently this module is being used in the odoo Sale module by [Simplify-ERP®](https://simplify-erp.com/).
 
 We are happy to list your delightful projects here. Just inform us with a few notes by email!
 
