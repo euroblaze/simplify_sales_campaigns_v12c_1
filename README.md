@@ -1,25 +1,26 @@
-# Simplify_sales_campaigns_v12c_1 Module
+# Sales Campaigns Module
 
-About simplify_sales_campaigns_v12c_1
+What does this module do?
 
-- Extra sales campaign field in the lead/pipeline model for larger sales operations.
-- Menu item for managing the sales campaigns in the Sales Module under Configurations.
+- It introduces a new field called `Sales Campaign` field in the lead/pipeline model.
+- A new menu item for managing the sales campaigns under `Sales > Configurations > Sales Campaigns`.
 
-# Installation
+# Developers
+
+## Installation
 
 Use git clone or just download the .zip package files, unzip at the addons directory, update the modules list and
 install the module. No further configuration is needed, you are good to go.
 
 Have a great time user. It's a Simplify-ERP®/NEBIZ® creation. Manage your sales operations with simplify_sales_campaigns_v12c_1!!! Cheers.
 
-# Compatibility
+## Compatibility
 
 Compatibility This module is compatible with 12c. Currently fully tested on 12c. ..
 
-# Contributors
+## Contributors
 
-This module was original authored by Bojan Anchev at Simplify-ERP®/NEBIZ® in Skopje, Macedonia. We can
-be reached at odoo@simplify-erp.com with your comments and suggestions for this module!
+This module was original authored by Bojan Anchev at Simplify-ERP® in Skopje, Macedonia. We can be reached at odoo@simplify-erp.com with your comments and suggestions for this module!
 
 **We are reaching out to more contributors who can help with..**
 
