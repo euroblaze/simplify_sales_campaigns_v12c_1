@@ -5,6 +5,10 @@ What does this module do?
 - It introduces a new field called `Sales Campaign` field in the lead/pipeline model.
 - A new menu item for managing the sales campaigns under `Sales > Configurations > Sales Campaigns`.
 
+## Interviews
+
+In v2 of this module, sales-people can create and associate "interviews" with customers/prospects.
+
 # Developers
 
 ## Installation
