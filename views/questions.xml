@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="interview_questions_inherit" model="ir.ui.view">
+        <field name="name">interview.questions.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Interview Questions" name="interview_questions">
+                    <field name="answers"/>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="question_tree" model="ir.ui.view">
+        <field name="name">question.tree</field>
+        <field name="model">campaign.questions</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+<!--                <field name="answers"/>-->
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="question_view_form">
+        <field name="name">question.form</field>
+        <field name="model">campaign.questions</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+<!--                        <field name="answers"/>-->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_question" model="ir.actions.act_window">
+        <field name="name">Questions</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">campaign.questions</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="question_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first question!
+            </p>
+        </field>
+    </record>
+</odoo>

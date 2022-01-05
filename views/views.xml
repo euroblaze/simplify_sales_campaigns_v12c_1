@@ -4,6 +4,10 @@
 
         <menuitem name="Sales Campaigns" id="simplify_sales_campaigns_v12c_1.campaigns_menu"
                   action="sales_campaigns_action" parent="sale.menu_sale_config"/>
+        <menuitem id="simplify_sales_campaigns_v12c_1.question_menu"
+                  name="Questions"
+                  action="action_question"
+                  parent="sale.menu_sale_config"/>
 
     </data>
 </odoo>

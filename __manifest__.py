@@ -14,6 +14,7 @@
         'security/ir.model.access.csv',
         'views/crm_campaign_view.xml',
         'views/sales_campaign_view.xml',
+        'views/questions.xml',
         'views/views.xml',
     ],
 

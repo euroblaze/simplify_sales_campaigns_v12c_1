@@ -11,3 +11,8 @@ class CrmCampaign(models.Model):
         string='Sales Campaign',
         help='Sales campaign name.',
         required=False)
+    answers = fields.Many2many(
+        'campaign.answers',
+        string="Your questions",
+        required=False
+    )
