@@ -34,22 +34,22 @@ class CampaignsQuestions(models.Model):
         string="Your questions",
         required=False
     )
-    # answers = fields.Char(
-    #     string="Your answers",
-    #     required=False,
-    # )
+    answers = fields.Char(
+        string="Your answers",
+        required=False,
+    )
 
 
 class CampaignsAnswers(models.Model):
     _name = 'campaign.answers'
     _description = 'Campaign Answers'
-
-    answer = fields.Char(
-        string="Answer",
-        required=False
-    )
-    name = fields.Many2many(
-        'campaign.questions',
-        string="Questions",
-        required=False
-    )
+#
+#     answer = fields.Char(
+#         string="Answer",
+#         required=False
+#     )
+#     name = fields.Many2many(
+#         'campaign.questions',
+#         string="Questions",
+#         required=False
+#     )

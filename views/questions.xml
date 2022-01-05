@@ -32,7 +32,7 @@
                 <sheet>
                     <group>
                         <field name="name"/>
-<!--                        <field name="answers"/>-->
+                        <field name="answers"/>
                     </group>
                 </sheet>
             </form>
