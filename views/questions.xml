@@ -7,7 +7,9 @@
         <field name="arch" type="xml">
             <notebook position="inside">
                 <page string="Interview Questions" name="interview_questions">
-                    <field name="answers"/>
+                    <tree editable="bottom">
+                        <field name="questions"/>
+                    </tree>
                 </page>
             </notebook>
         </field>
@@ -17,9 +19,22 @@
         <field name="name">question.tree</field>
         <field name="model">campaign.questions</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree editable="bottom">
                 <field name="name"/>
-<!--                <field name="answers"/>-->
+            </tree>
+        </field>
+    </record>
+
+    <record id="answer_tree" model="ir.ui.view">
+        <field name="name">answer.tree</field>
+        <field name="model">campaign.answers</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="question" colspan="4"/>
+                <field name="answer_type"/>
+                <field name="answer1" attrs="{'invisible': [('answer_type', '!=', 'yes_no')]}"/>
+                <field name="answer2" attrs="{'invisible': [('answer_type', '!=', 'short_answer')]}"/>
+                <field name="answer3" attrs="{'invisible': [('answer_type', '!=', 'long_answer')]}"/>
             </tree>
         </field>
     </record>
@@ -32,23 +47,10 @@
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field name="answers"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
 
-    <record id="action_question" model="ir.actions.act_window">
-        <field name="name">Questions</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">campaign.questions</field>
-        <field name="view_mode">tree,form</field>
-        <field name="view_id" ref="question_tree"/>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create your first question!
-            </p>
-        </field>
-    </record>
 </odoo>

@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_sales_campaigns_campaign,access.sales_campaigns.campaign,model_sales_campaigns_campaign,,1,1,1,1
 access_campaign_questions,access.campaign.questions,model_campaign_questions,,1,1,1,1
+access_lead_campaign_questions,access.lead_campaign.questions,model_lead_campaign_questions,,1,1,1,1
 access_campaign_answers,access.campaign.answers,model_campaign_answers,,1,1,1,1
