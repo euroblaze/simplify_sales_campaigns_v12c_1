@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="interview_questions_inherit" model="ir.ui.view">
+        <field name="name">interview.questions.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Interview Questions" name="interview_questions">
+                    <tree editable="bottom">
+                        <field name="questions"/>
+                    </tree>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="question_tree" model="ir.ui.view">
+        <field name="name">question.tree</field>
+        <field name="model">campaign.questions</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="answer_tree" model="ir.ui.view">
+        <field name="name">answer.tree</field>
+        <field name="model">campaign.answers</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="question" colspan="4"/>
+                <field name="answer_type"/>
+                <field name="answer1" attrs="{'invisible': [('answer_type', '!=', 'yes_no')]}"/>
+                <field name="answer2" attrs="{'invisible': [('answer_type', '!=', 'short_answer')]}"/>
+                <field name="answer3" attrs="{'invisible': [('answer_type', '!=', 'long_answer')]}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="question_view_form">
+        <field name="name">question.form</field>
+        <field name="model">campaign.questions</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

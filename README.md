@@ -5,6 +5,10 @@ What does this module do?
 - It introduces a new field called `Sales Campaign` field in the lead/pipeline model.
 - A new menu item for managing the sales campaigns under `Sales > Configurations > Sales Campaigns`.
 
+## Interviews
+
+In v2 of this module, sales-people can create and associate "interviews" with customers/prospects.
+
 # Developers
 
 ## Installation
@@ -21,7 +25,7 @@ Compatibility This module is compatible with 12c. Currently fully tested on 12c.
 ## Contributors
 
 This module was original authored by Bojan Anchev at Simplify-ERP® in Skopje, Macedonia. We can be reached at odoo@simplify-erp.com with your comments and suggestions for this module!
-
+This module upgraded by Bojan Dimoski. In this upgrade there are questions and answers for particular Sale Campaign. 
 **We are reaching out to more contributors who can help with..**
 
 - testing this module
