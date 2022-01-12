@@ -3,8 +3,8 @@
     'name': "Sales Campaigns",
     'summary': """Sales Campaigns""",
     'description': """Sales Campaigns""",
-    'author': "Bojan Anchev",
-    'website': "m102@simplify-erp.com",
+    'author': "Bojan Anchev and Bojan Dimoski",
+    'website': "m102@simplify-erp.com, m114@simplify-erp.com",
     'category': 'Productivity',
     'version': '0.1',
 
