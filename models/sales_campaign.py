@@ -78,16 +78,18 @@ class CampaignsQuestions(models.Model):
         required=False,
         readonly=True)
 
-
-class CampaignsAnswers(models.Model):
-    _name = 'campaign.answers'
-    _description = 'Campaign Answers'
-
     answer_type = fields.Selection([
         ('yes_no', 'Yes/No'),
         ('short_answer', 'One line answer'),
         ('long_answer', 'Up to 200 characters answer')
     ], requered=True, default='short_answer')
+
+
+class CampaignsAnswers(models.Model):
+    _name = 'campaign.answers'
+    _description = 'Campaign Answers'
+
+    answer_type = fields.Selection(related='question.answer_type')
     answer1 = fields.Selection([('yes', 'Yes'), ('no', 'No')], string='Yes/No')
     answer2 = fields.Char(string="Your short answer", required=False)
     answer3 = fields.Text(string="Your long answer", required=False)

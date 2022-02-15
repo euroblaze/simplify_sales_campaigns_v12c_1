@@ -5,13 +5,13 @@
         <field name="model">crm.lead</field>
         <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
         <field name="arch" type="xml">
-            <notebook position="inside">
-                <page string="Interview Questions" name="interview_questions">
+            <page position="before">
+                <page string="Kunden Fragebogen" name="interview_questions">
                     <tree editable="bottom">
                         <field name="questions"/>
                     </tree>
                 </page>
-            </notebook>
+            </page>
         </field>
     </record>
 
@@ -21,6 +21,7 @@
         <field name="arch" type="xml">
             <tree editable="bottom">
                 <field name="name"/>
+                <field name="answer_type"/>
             </tree>
         </field>
     </record>
@@ -31,7 +32,7 @@
         <field name="arch" type="xml">
             <tree editable="bottom">
                 <field name="question" colspan="4"/>
-                <field name="answer_type"/>
+                <field name="answer_type" invisible="1"/>
                 <field name="answer1" attrs="{'invisible': [('answer_type', '!=', 'yes_no')]}"/>
                 <field name="answer2" attrs="{'invisible': [('answer_type', '!=', 'short_answer')]}"/>
                 <field name="answer3" attrs="{'invisible': [('answer_type', '!=', 'long_answer')]}"/>
